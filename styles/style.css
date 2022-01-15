@@ -5,7 +5,6 @@
 /* COMMON STYLES STARTS*/
 body{
     font-family: 'Poppins', sans-serif;
-    padding: 50px 85px;
     background-color: #FFFFFF;;
 }
 main{
@@ -22,15 +21,17 @@ main{
     font-weight: bold;
     font-size: 24px;
 }
-
+/* HEADER STYLES */
+header{
+    margin: 100px;
+}
 /* JOURNEY SECTION STYLE STARTS  */
 .top-section{
-    width:100% ;
     display:flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
-    width: 1840px;
+    width: 1800px;
     height: 500px;
 }
 .journey-starts{
@@ -76,7 +77,6 @@ main{
 
 /* POPULAR COLLECTION STYLE STARTS  */
 .popular-products{
-    /* width: 1047px; */
     height: 1980px;
     width: 100%;
     display:flex ;
@@ -89,7 +89,6 @@ main{
 }
 .products{
     width: 1000px;
-    /* width: 100%; */
     padding: 30px;
     display: grid;
     gap: 2em;
@@ -169,6 +168,7 @@ footer{
     width: 100%;
     margin: 0px;
     font-size: 18px;
+    padding: 10px;
 }
 footer>p>a{
     text-decoration: none;
