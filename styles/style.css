@@ -118,7 +118,7 @@ header{
 }
 /* POPULAR COLLECTION STYLE ENDS */
 
-/* LOGIN SECTION STYLE STARTS  */
+/* SIGN_UP SECTION STYLE STARTS  */
 .final-section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -140,14 +140,14 @@ header{
 
 }
 
-.login-form {
+.signup-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-.login-form input,
+.signup-form input,
 button {
     font-size: 1.3em;
     margin: 5px;
@@ -155,12 +155,6 @@ button {
     border-radius: 5px;
 }
 
-.login-form button {
-    background-color: black;
-    color: darkgray;
-    font-weight: 800;
-
-}
 /* FOOTER STYLES */
 footer{
     color: whitesmoke;
