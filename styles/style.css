@@ -31,18 +31,18 @@ header{
     grid-template-columns: repeat(2,1fr);
     column-gap: 5em;
     width: 1300px;
-    height: 500px;
+    /* height: 500px; */
 }
 .journey-starts{
     width: 582px;
-    height: 270px; 
+    /* height: 270px;  */
 }
 .main-photo img{
     background-image: url(images/circle.svg);
     background-repeat: no-repeat;
     background-position-x: right;
     width: 440px;
-    height: 414px;
+    /* height: 414px; */
 }
 .link-button{
     text-decoration: none;
@@ -64,7 +64,7 @@ header{
     padding: 30px 60px;
     margin-top: 100px;
     width: 1200px;
-    height: 40px;
+    /* height: 40px; */
     margin-bottom: 100px;
 }
 .logos{
@@ -76,7 +76,7 @@ header{
 
 /* POPULAR COLLECTION STYLE STARTS  */
 .popular-products{
-    height: 1980px;
+    /* height: 1980px; */
     width: 100%;
     display:flex ;
     flex-direction: column;
@@ -110,7 +110,7 @@ header{
     text-decoration: none;
     font-size: 20px;
     width: 99px;
-    height: 24px;
+    /* height: 24px; */
     color: #E02C6D;
     text-align: right;
 }
@@ -163,7 +163,7 @@ button {
 footer{
     color: whitesmoke;
     text-align: center;
-    height: 239px;
+    /* height: 239px; */
     background-color: #0A0826;
     margin: 0px;
     font-size: 18px;
@@ -182,14 +182,55 @@ footer>p>a{
  -----------------*/
 /* Mobile-device */
 @media only screen and (max-width:688px) {
-    .container{
-        width: 100%;
+    .header,.journey-starts,.main-photo,.final-section,.container,.shopping-sites,.popular-products,.shopping-sites{
+        width: 90%;
+        align-items: center;
+        text-align: center;
     }
     .top-section{
+        width: 100%;
+        padding: 10px;
         grid-template-columns: 1fr;
+        column-gap: 0px;
+    }
+    .popular-products{
+        width: 100%;
     }
     .products{
+        grid-template-columns: 1fr;
+    }
+    .final-section{
         width: 100%;
         grid-template-columns: 1fr;
+        row-gap: 1em;
+        margin: 0;
+        padding: 10px;
+    }
+}
+/* Tablet Devices */
+@media only screen and (min-width:689px) and (max-width:992px){
+    .header,.journey-starts,.main-photo,.final-section,.container,.shopping-sites,.popular-products,.shopping-sites{
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+    .top-section{
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: 1fr ;
+        column-gap: 0px;
+    }
+    .popular-products{
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: 1fr 1fr;
+    }
+    .final-section{
+        width: 100%;
+        grid-template-columns: 1fr;
+        row-gap: 1em;
+        margin: 0;
+        padding: 10px;
     }
 }
