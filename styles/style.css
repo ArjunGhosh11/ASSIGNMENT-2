@@ -46,3 +46,20 @@ body{
     color: #FFFFFF;
 }
 /* TOP SECTION STYLE ENDS  */
+
+/* SHOPPING SITES STYLES STARTS  */
+.shopping-sites{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 30px 60px;
+    margin-top: 100px;
+    width: 1200px;
+    height: 40px;
+    margin-bottom: 100px;
+}
+.logos{
+    width: 100px;
+    height: 40px;
+    margin-left: 60px;
+}
+/* SHOPPING SITES STYLES ENDS  */
