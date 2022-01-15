@@ -27,11 +27,10 @@ header{
 }
 /* JOURNEY SECTION STYLE STARTS  */
 .top-section{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 100px;
-    width: 1800px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5em;
+    width: 1300px;
     height: 500px;
 }
 .journey-starts{
@@ -119,11 +118,12 @@ header{
 
 /* LOGIN SECTION STYLE STARTS  */
 .final-section{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     box-shadow: 10px 10px 40px grey;
-    width: 1200px;
+    width: 1000px;
     padding: 100px;
-    justify-content:space-evenly;
+    row-gap: 10em;
     margin: 0px 100px;
     border-radius: 30px;
 }
@@ -165,7 +165,6 @@ footer{
     text-align: center;
     height: 239px;
     background-color: #0A0826;
-    width: 100%;
     margin: 0px;
     font-size: 18px;
     padding: 10px;
@@ -175,4 +174,22 @@ footer>p>a{
     color: whitesmoke;
     margin: 10px;
     font-size: 20px;
+}
+
+
+/*---------------
+ Media Querries 
+ -----------------*/
+/* Mobile-device */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .top-section{
+        grid-template-columns: 1fr;
+    }
+    .products{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 }
