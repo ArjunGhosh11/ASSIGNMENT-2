@@ -6,6 +6,12 @@
 body{
     font-family: 'Poppins', sans-serif;
     padding: 50px 85px;
+    background-color: #FFFFFF;;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .section-title{
     font-weight: bold;
@@ -19,10 +25,13 @@ body{
 
 /* JOURNEY SECTION STYLE STARTS  */
 .top-section{
-    display: flex;
+    width:100% ;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    width: 1840px;
+    height: 500px;
 }
 .journey-starts{
     width: 582px;
@@ -31,6 +40,7 @@ body{
 .main-photo img{
     background-image: url(images/circle.svg);
     background-repeat: no-repeat;
+    background-position-x: right;
     width: 440px;
     height: 414px;
 }
@@ -63,3 +73,47 @@ body{
     margin-left: 60px;
 }
 /* SHOPPING SITES STYLES ENDS  */
+
+/* POPULAR COLLECTION STYLE STARTS  */
+.popular-products{
+    /* width: 1047px; */
+    height: 1662px;
+    width: 100%;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.popular-products h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.products{
+    width: 1000px;
+    /* width: 100%; */
+    padding: 30px;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 20px;
+}
+.product{
+    box-shadow: 10px 10px 40px grey;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+}
+.fa-star.filled{
+    color: goldenrod;
+}
+.fa-star.empty{
+    color: gray;
+}
+.see-more{
+    text-decoration: none;
+    font-size: 20px;
+    width: 99px;
+    height: 24px;
+    color: #E02C6D;
+    text-align: right;
+}
