@@ -77,12 +77,11 @@ main{
 /* POPULAR COLLECTION STYLE STARTS  */
 .popular-products{
     /* width: 1047px; */
-    height: 1662px;
+    height: 1980px;
     width: 100%;
     display:flex ;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
 }
 .popular-products h1{
     text-align: center;
@@ -116,4 +115,64 @@ main{
     height: 24px;
     color: #E02C6D;
     text-align: right;
+}
+/* POPULAR COLLECTION STYLE ENDS */
+
+/* LOGIN SECTION STYLE STARTS  */
+.final-section{
+    display: flex;
+    box-shadow: 10px 10px 40px grey;
+    width: 1200px;
+    padding: 100px;
+    justify-content:space-evenly;
+    margin: 0px 100px;
+    border-radius: 30px;
+}
+.lets-begin img{
+    width: 80%;
+    border-radius: 20px;
+}
+.form-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-form input,
+button {
+    font-size: 1.3em;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: black;
+    color: darkgray;
+    font-weight: 800;
+
+}
+/* FOOTER STYLES */
+footer{
+    color: whitesmoke;
+    text-align: center;
+    height: 239px;
+    background-color: #0A0826;
+    width: 100%;
+    margin: 0px;
+    font-size: 18px;
+}
+footer>p>a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 10px;
+    font-size: 20px;
 }
