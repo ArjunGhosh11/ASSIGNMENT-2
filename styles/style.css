@@ -31,18 +31,19 @@ header{
     grid-template-columns: repeat(2,1fr);
     column-gap: 5em;
     width: 1300px;
-    /* height: 500px; */
 }
 .journey-starts{
     width: 582px;
-    /* height: 270px;  */
 }
 .main-photo img{
     background-image: url(images/circle.svg);
     background-repeat: no-repeat;
     background-position-x: right;
     width: 440px;
-    /* height: 414px; */
+}
+.main-photo img:hover{
+    transform: scale(1.3);
+    transition: 2s;
 }
 .link-button{
     text-decoration: none;
@@ -55,6 +56,10 @@ header{
     font-size: 16px;
     color: #FFFFFF;
 }
+.link-button:hover{
+    background-color: black;
+    transition: 1.5s;
+}
 /* TOP SECTION STYLE ENDS  */
 
 /* SHOPPING SITES STYLES STARTS  */
@@ -64,7 +69,6 @@ header{
     padding: 30px 60px;
     margin-top: 100px;
     width: 1200px;
-    /* height: 40px; */
     margin-bottom: 100px;
 }
 .logos{
@@ -76,7 +80,6 @@ header{
 
 /* POPULAR COLLECTION STYLE STARTS  */
 .popular-products{
-    /* height: 1980px; */
     width: 100%;
     display:flex ;
     flex-direction: column;
@@ -110,7 +113,6 @@ header{
     text-decoration: none;
     font-size: 20px;
     width: 99px;
-    /* height: 24px; */
     color: #E02C6D;
     text-align: right;
 }
@@ -163,7 +165,6 @@ button {
 footer{
     color: whitesmoke;
     text-align: center;
-    /* height: 239px; */
     background-color: #0A0826;
     margin: 0px;
     font-size: 18px;
@@ -187,8 +188,8 @@ footer>p>a{
         align-items: center;
         text-align: center;
     }
-    .header h1{
-        display: block;
+    .header{
+        margin: 0;
         text-align: center;
     }
     .main-photo img{
@@ -201,10 +202,14 @@ footer>p>a{
         grid-template-columns: 1fr;
         column-gap: 0px;
         row-gap: 50px;
-        margin-left: 70px;
+        margin: auto;
+        margin-top: 0px;
     }
     .shopping-sites{
         padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .popular-products{
         width: 100%;
@@ -242,7 +247,7 @@ footer>p>a{
         grid-template-columns: 1fr;
         column-gap: 0px;
         row-gap: 50px;
-        margin-left: 70px;
+        margin: auto;
     }
     .shopping-sites{
         padding: 0px;
